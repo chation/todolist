@@ -3,3 +3,21 @@
     margin: 10px;
     background-color: yellow;
 }
+.show{
+    width: 500px;
+    margin:0 auto;
+}
+#inputList{
+    width: 500px;
+    margin:0 auto;
+}
+
+.container{
+    width: 600px;
+    margin:50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+body {
+    background-color: #F5F5F5;
+}

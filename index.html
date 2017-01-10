@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <title>To Do List</title>
     <link rel="stylesheet" href="css/style.css"/>
-    <script src="js/md5.js"></script>
 </head>
 <body>
-<input title="todo" id="txt" type="text" /><button id="btn1">todo</button>
-<div id="showList">
+<div class="container">
+    <div id="inputList">
+        <input title="todo" id="txt" type="text"/>
+        <button id="btn1">todo</button>
+    </div>
+    <h3>还有 <span id="count">0</span> 项未完成</h3>
+    <div id="showList" class="show">
+
+    </div>
+    <h3>已经完成 <span id="overCount">0</span> 项</h3>
+    <div id="overList" class="show">
+
+    </div>
 </div>
 <script src="js/todolist.js"></script>
 </body>
