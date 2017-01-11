@@ -8,14 +8,14 @@
 <body>
 <div class="container">
     <div id="inputList">
-        <input title="todo" id="txt" type="text"/>
-        <button id="btn1">todo</button>
+        <input title="todo" id="txt" type="text" onkeypress="enterPress(event)"/>
+        <button id="btn1">TO DO</button>
     </div>
-    <h3>还有 <span id="count">0</span> 项未完成</h3>
+    <h3>还有 <span id="count" class="warning">0</span> 项未完成</h3>
     <div id="showList" class="show">
 
     </div>
-    <h3>已经完成 <span id="overCount">0</span> 项</h3>
+    <h3>已经完成 <span id="overCount" class="success">0</span> 项</h3>
     <div id="overList" class="show">
 
     </div>

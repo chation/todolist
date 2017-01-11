@@ -1,7 +1,17 @@
 .lists{
     padding: 20px;
     margin: 10px;
-    background-color: yellow;
+    background-color: #FFF8BF;
+    box-shadow: 5px 4px 10px 2px gray;
+    border-left: 10px #4078C0 solid;
+}
+.overLists{
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(209, 252, 181,0.5);
+    color: #8F8F8F;
+    /*box-shadow: 5px 4px 10px 2px gray;*/
+    border-left: 10px #4078C0 solid;
 }
 .show{
     width: 500px;
@@ -11,13 +21,43 @@
     width: 500px;
     margin:0 auto;
 }
+#showList{
+    border-bottom: 1px solid #8B8B8B;
+    padding-bottom: 20px;
+}
+
+.success{
+    color: #5CB85C;
+}
+.warning {
+    color: #D9534F;
+}
+
+#txt {
+    padding: 5px 10px 5px 10px;
+    width: 300px;
+    font-size: large;
+    border: 1px solid #B8B8B8;
+}
+#txt:focus{
+    border:1px solid #3385FF;
+}
+#btn1{
+    width: 70px;
+    height: 35px;
+    margin-left:-5px;
+}
 
 .container{
-    width: 600px;
+    width: 650px;
     margin:50px auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: rgba(190,190,190,0.5);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;;
 }
 body {
-    background-color: #F5F5F5;
+    /*background-color: #F5F5F5;*/
+    background-image: url(../img/bg1.png);
 }
