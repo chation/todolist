@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <title>To Do List</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="img/icon.gif"/>
 </head>
 <body>
+<div class="header">
+    <div id="title">
+        <img src="img/title.gif"/>
+        <div id="my">—— by Chation</div>
+    </div>
+</div>
 <div class="container">
     <div id="inputList">
         <input title="todo" id="txt" type="text" onkeypress="enterPress(event)"/>
@@ -13,12 +20,13 @@
     </div>
     <h3>还有 <span id="count" class="warning">0</span> 项未完成</h3>
     <div id="showList" class="show">
-
     </div>
     <h3>已经完成 <span id="overCount" class="success">0</span> 项</h3>
     <div id="overList" class="show">
-
     </div>
+</div>
+<div class="foot">
+    <span id="nowTime">Now Time : 00:00:00</span>
 </div>
 <script src="js/todolist.js"></script>
 </body>

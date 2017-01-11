@@ -1,18 +1,20 @@
 /**
  * Created by Chation on 2017/1/10.
  */
-var txt = document.getElementById("txt");
-var btn = document.getElementById("btn1");
-var show = document.getElementById("showList");
-var count = document.getElementById("count");
+setInterval(showTime,1000);
+var txt = document.getElementById("txt"),
+    btn = document.getElementById("btn1"),
+    show = document.getElementById("showList"),
+    count = document.getElementById("count");
+
 btn.addEventListener("click", addList, false);
 
 /* 读取本地存储中的list */
 count.innerHTML = localStorage.length;
 for (var i = 0, len = localStorage.length; i < len; i++) {
-    var list = document.createElement("div");
-    var key = localStorage.key(i);
-    var val = localStorage[key];
+    var list = document.createElement("div"),
+        key = localStorage.key(i),
+        val = localStorage[key];
     list.setAttribute("class", "lists");
     list.setAttribute("data-hex", key);
     list.innerHTML = key + " ： " + val;
@@ -36,9 +38,9 @@ for (var i = 0, len = localStorage.length; i < len; i++) {
 /* 添加到list */
 function addList() {
     if (txt.value.trim() != "") {
-        var list = document.createElement("div");
-        var date = new Date().toLocaleString();
-        var time = new Date();
+        var list = document.createElement("div"),
+            date = new Date().toLocaleString(),
+            time = new Date();
         list.setAttribute("class", "lists");
         list.innerHTML = ten(time.getHours())+":"+ten(time.getMinutes())+":"+ten(time.getSeconds())+" ： " + txt.value;
         list.setAttribute("data-hex", date);
@@ -66,6 +68,7 @@ function addList() {
     }
 }
 
+/* 小于十前面加0 */
 function ten(num){
     if(parseInt(num)<10){
         return "0"+num;
@@ -79,4 +82,11 @@ function enterPress(e) { //使用enter实现同样的功能
     if (event.keyCode == 13) {
         addList();
     }
+}
+
+function showTime(){
+    var time = new Date(),
+        span = document.getElementById("nowTime");
+    span.innerHTML = "Now Time : "+ten(time.getHours())+":"+ten(time.getMinutes())+":"+ten(time.getSeconds());
+
 }

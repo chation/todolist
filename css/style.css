@@ -18,7 +18,7 @@
     margin:0 auto;
 }
 #inputList{
-    width: 500px;
+    width: 392px;
     margin:0 auto;
 }
 #showList{
@@ -48,8 +48,26 @@
     margin-left:-5px;
 }
 
+.header{
+    height: 50px;
+    width: 100%;
+    background-color: #bbdad1;
+    position: fixed;
+    top:0;
+}
 .container{
     width: 650px;
+    margin:100px auto;
+    padding: 20px;
+    background-color: rgba(190,190,190,0.5);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;;
+}
+.foot{
+    font-size: large;
+    text-align: center;
+    width: 200px;
     margin:50px auto;
     padding: 20px;
     background-color: rgba(190,190,190,0.5);
@@ -60,4 +78,11 @@
 body {
     /*background-color: #F5F5F5;*/
     background-image: url(../img/bg1.png);
+    margin:0;
+    padding: 0;
+}
+#my{
+    float: right;
+    color:#B8B8B8;
+    padding: 30px 10px 0 0;
 }
